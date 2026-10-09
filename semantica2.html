@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amigo Fiel | Sección de Adopción</title>
+
+    <style>
+        /* Estilos generales */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fffdf2;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            background-color: #fcfff0;
+            padding: 15px 25px;
+            border-bottom: 3px solid #8bcf88;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #36784a;
+        }
+
+        header p {
+            margin: 5px 0;
+        }
+
+        .logo-cabecera {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* Navegación */
+        .barra-navegacion {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .boton-nav {
+            display: inline-block;
+            text-decoration: none;
+            color: #245b35;
+            background-color: #d9f5d5;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .boton-nav:hover {
+            background-color: #70d888;
+            color: white;
+        }
+
+        .boton-nav.activo {
+            background-color: #36784a;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Contenido principal */
+        main {
+            padding: 20px;
+        }
+
+        .introduccion {
+            background-color: #ffffe8;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2, h3 {
+            color: #36784a;
+        }
+
+        /* Tarjetas de adopción */
+        .contenedor-perros {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .tarjeta-perro {
+            background-color: #ffffff;
+            border: 1px solid #d9e8d2;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .tarjeta-perro img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .tarjeta-perro h3 {
+            margin-bottom: 5px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #36784a;
+            color: white;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            margin-top: 8px;
+        }
+
+        .boton:hover {
+            background-color: #245b35;
+        }
+
+        /* Información adicional */
+        .informacion {
+            background-color: #fff4cc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .pasos {
+            background-color: #ffffe8;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            background-color: #36784a;
+            color: white;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* Adaptación a pantallas pequeñas */
+        @media (max-width: 800px) {
+            .contenedor-perros {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .barra-navegacion {
+                justify-content: center;
+            }
+
+            .contenedor-perros {
+                grid-template-columns: 1fr;
+            }
+
+            .logo-cabecera {
+                width: 90px;
+                height: 90px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div>
+            <h1>Amigo Fiel 🐾</h1>
+            <p>Un hogar, una oportunidad y mucho amor.</p>
+
+            <nav class="barra-navegacion"
+                 aria-label="Navegación principal">
+
+                <a href="semantica.html" class="boton-nav">
+                    Inicio
+                </a>
+
+                <a href="semantica2.html"
+                   class="boton-nav activo"
+                   aria-current="page">
+                    Sección de adopción
+                </a>
+
+                <a href="semantica3.html" class="boton-nav">
+                    Sección de suministros
+                </a>
+            </nav>
+        </div>
+
+        <img src="logo perruno.jpg"
+             alt="Logotipo de Amigo Fiel"
+             class="logo-cabecera">
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Introducción -->
+        <section class="introduccion">
+            <h2>¡Adopta un amigo fiel!</h2>
+
+            <p>
+                Muchos perros necesitan una familia que les dé amor,
+                protección y una segunda oportunidad.
+                Adoptar significa abrir tu corazón y ofrecer un hogar
+                responsable a un animal que lo necesita.
+            </p>
+
+            <p>
+                Conoce a algunos de nuestros amigos y descubre
+                cómo puedes contribuir a su bienestar.
+            </p>
+        </section>
+
+        <!-- Perros en adopción -->
+        <section>
+            <h2>Conoce a nuestros amigos</h2>
+
+            <div class="contenedor-perros">
+
+                <article class="tarjeta-perro">
+                    <img src="perrus.jpg"
+                         alt="Fotografía de Max, un perro en adopción">
+
+                    <h3>Max</h3>
+
+                    <p><strong>Edad:</strong> 2 años</p>
+                    <p><strong>Personalidad:</strong> Juguetón y cariñoso.</p>
+
+                    <p>
+                        Max necesita una familia activa que pueda
+                        darle paseos, atención y mucho cariño.
+                    </p>
+
+                    <a href="#requisitos" class="boton">
+                        Cómo adoptar
+                    </a>
+                </article>
+
+                <article class="tarjeta-perro">
+                    <img src="perrito.jpg"
+                         alt="Fotografía de Luna, una perrita en adopción">
+
+                    <h3>Luna</h3>
+
+                    <p><strong>Edad:</strong> 1 año</p>
+                    <p><strong>Personalidad:</strong> Dulce y tranquila.</p>
+
+                    <p>
+                        Luna busca un hogar paciente donde pueda
+                        sentirse segura y recibir mucho amor.
+                    </p>
+
+                    <a href="#requisitos" class="boton">
+                        Cómo adoptar
+                    </a>
+                </article>
+
+                <article class="tarjeta-perro">
+                    <img src="perro.jpg"
+                         alt="Fotografía de Toby, un perro en adopción">
+
+                    <h3>Toby</h3>
+
+                    <p><strong>Edad:</strong> 3 años</p>
+                    <p><strong>Personalidad:</strong> Amigable y leal.</p>
+
+                    <p>
+                        Toby disfruta de la compañía y espera encontrar
+                        una familia que lo cuide durante toda su vida.
+                    </p>
+
+                    <a href="#requisitos" class="boton">
+                        Cómo adoptar
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Requisitos -->
+        <section class="informacion" id="requisitos">
+            <h2>Requisitos para adoptar</h2>
+
+            <p>
+                Antes de adoptar un perro, es importante considerar
+                las responsabilidades que implica cuidar de un ser vivo.
+            </p>
+
+            <ul>
+                <li>Ser consciente del compromiso a largo plazo.</li>
+                <li>Contar con tiempo para atender sus necesidades.</li>
+                <li>Proporcionar alimento, agua y un lugar seguro.</li>
+                <li>Brindar atención veterinaria y vacunación.</li>
+                <li>Tratar al perro con respeto, paciencia y cariño.</li>
+                <li>Contar con el acuerdo de las personas del hogar.</li>
+            </ul>
+        </section>
+
+        <!-- Pasos para adoptar -->
+        <section class="pasos">
+            <h2>¿Cómo puedes adoptar?</h2>
+
+            <ol>
+                <li>
+                    <strong>Elige a tu compañero:</strong>
+                    conoce su personalidad y sus necesidades.
+                </li>
+
+                <li>
+                    <strong>Infórmate:</strong>
+                    contacta con un refugio o una organización
+                    de protección animal.
+                </li>
+
+                <li>
+                    <strong>Prepara tu hogar:</strong>
+                    consigue alimento, recipientes, una cama
+                    y los artículos necesarios.
+                </li>
+
+                <li>
+                    <strong>Realiza el proceso de adopción:</strong>
+                    sigue los requisitos y las indicaciones
+                    de la organización responsable.
+                </li>
+
+                <li>
+                    <strong>Cuida a tu nuevo amigo:</strong>
+                    ofrece atención, educación, ejercicio
+                    y visitas al veterinario.
+                </li>
+            </ol>
+        </section>
+
+        <!-- Mensaje final -->
+        <section class="introduccion">
+            <h2>¡Dale una segunda oportunidad!</h2>
+
+            <p>
+                Adoptar no solo cambia la vida de un perro,
+                también puede llenar tu hogar de compañía,
+                alegría y momentos inolvidables.
+            </p>
+
+            <a href="sentinela.html" class="boton">
+                Volver al inicio
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p><strong>Amigo Fiel</strong> | Proyecto educativo PEAC</p>
+        <p>Adopta con responsabilidad y cambia una vida. 🐶</p>
+    </footer>
+
+</body>
+</html>
