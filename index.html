@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amigo Fiel | Cuidado y adopción de perros</title>
+
+    <style>
+        /* Estilos generales */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fffdf2;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            background-color: #fcfff0;
+            padding: 15px 25px;
+            border-bottom: 3px solid #8bcf88;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #36784a;
+        }
+
+        header p {
+            margin: 5px 0;
+        }
+
+        .logo-cabecera {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* Barra de navegación */
+        .barra-navegacion {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .boton-nav {
+            display: inline-block;
+            text-decoration: none;
+            color: #245b35;
+            background-color: #d9f5d5;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        .boton-nav:hover {
+            background-color: #70d888;
+            color: #ffffff;
+        }
+
+        .boton-nav.activo {
+            background-color: #36784a;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Contenido principal */
+        main {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        aside {
+            width: 28%;
+            background-color: #fff4cc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        section {
+            width: 72%;
+            background-color: #ffffe8;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2, h3 {
+            color: #36784a;
+        }
+
+        .imagen-perro {
+            display: block;
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+            margin: 15px auto;
+            border-radius: 12px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #36784a;
+            color: white;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            margin-top: 8px;
+        }
+
+        .boton:hover {
+            background-color: #245b35;
+        }
+
+        article {
+            margin-bottom: 25px;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            background-color: #36784a;
+            color: white;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* Adaptación para celulares */
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .barra-navegacion {
+                justify-content: center;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+            aside,
+            section {
+                width: 100%;
+            }
+
+            .logo-cabecera {
+                width: 90px;
+                height: 90px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado del sitio -->
+    <header>
+        <div>
+            <h1>Amigo Fiel 🐾</h1>
+            <p>Un hogar, una oportunidad y mucho amor.</p>
+
+            <nav class="barra-navegacion" aria-label="Navegación principal">
+
+    <a href="index.html" class="boton-nav">
+        Inicio
+    </a>
+
+    <a href="semantica2.html" class="boton-nav">
+        Sección de adopción
+    </a>
+
+    <a href="semantica3.html" class="boton-nav">
+        Sección de suministros
+    </a>
+
+</nav>
+        </div>
+
+        <img src="logo perruno.jpg"
+             alt="Logotipo de Amigo Fiel"
+             class="logo-cabecera">
+    </header>
+
+    <!-- Contenido de la página -->
+    <main>
+
+        <!-- Barra lateral -->
+        <aside>
+            <h2>¿Cómo puedes ayudar?</h2>
+
+            <ul>
+                <li>Adopta en lugar de comprar.</li>
+                <li>Proporciona agua y alimento.</li>
+                <li>Lleva a tu perro al veterinario.</li>
+                <li>Promueve la esterilización responsable.</li>
+                <li>Trata a todos los animales con respeto.</li>
+            </ul>
+
+            <h3>Dato importante</h3>
+            <p>
+                Adoptar un perro es un compromiso que requiere tiempo,
+                paciencia, cuidados y responsabilidad durante toda su vida.
+            </p>
+        </aside>
+
+        <!-- Sección principal -->
+        <section>
+
+            <article>
+                <h2>Bienvenidos a Amigo Fiel</h2>
+
+                <p>
+                    ¡Bienvenidos a nuestro sitio web! Este espacio está
+                    dedicado a los perros, esos compañeros leales que
+                    nos brindan cariño, alegría y compañía.
+                </p>
+
+                <p>
+                    Nuestro objetivo es fomentar el cuidado responsable,
+                    la adopción y el respeto hacia los animales,
+                    además de informar sobre sus necesidades.
+                </p>
+
+                <img src="perritos.jpg"
+                     alt="Perro esperando recibir cariño y cuidados"
+                     class="imagen-perro">
+            </article>
+
+            <article>
+                <h2>La importancia de adoptar</h2>
+
+                <p>
+                    Muchos perros necesitan una familia que les ofrezca
+                    protección, alimento, atención veterinaria y afecto.
+                    La adopción responsable puede darles una nueva
+                    oportunidad para tener una vida digna.
+                </p>
+
+                <p>
+                    Antes de adoptar, debemos considerar el espacio,
+                    el tiempo y los recursos necesarios para cuidar
+                    adecuadamente a nuestra mascota.
+                </p>
+
+                <a href="semantica2.html" class="boton">
+                    Conoce la sección de adopción
+                </a>
+            </article>
+
+            <article>
+                <h2>Cuidados básicos para tu perro</h2>
+
+                <ul>
+                    <li>Ofrecer alimento adecuado para su edad y tamaño.</li>
+                    <li>Mantener agua limpia y fresca disponible.</li>
+                    <li>Proporcionar ejercicio, paseos y juegos.</li>
+                    <li>Mantener al día sus vacunas y revisiones veterinarias.</li>
+                    <li>Brindarle un lugar limpio y seguro para descansar.</li>
+                    <li>Dedicarle tiempo, atención y cariño.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>¡Sé parte del cambio!</h2>
+
+                <p>
+                    Cada acción cuenta. Ayúdanos a difundir la importancia
+                    del bienestar animal y a construir una sociedad
+                    más consciente y respetuosa con los perros.
+                </p>
+
+                <a href="semantica3.html" class="boton">
+                    Explora los suministros
+                </a>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p><strong>Amigo Fiel</strong> | Proyecto educativo PEAC</p>
+        <p>El respeto y el cuidado hacen la diferencia. 🐶</p>
+    </footer>
+
+</body>
+</html>
